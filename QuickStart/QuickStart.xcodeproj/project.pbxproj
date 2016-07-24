@@ -16,6 +16,8 @@
 		5A86382E1D43ACDB00CED79F /* QuickStartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86382D1D43ACDB00CED79F /* QuickStartTests.swift */; };
 		5A8638391D43ACDB00CED79F /* QuickStartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8638381D43ACDB00CED79F /* QuickStartUITests.swift */; };
 		5AEA63F61D44A5E000421D89 /* Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5AEA63F51D44A5E000421D89 /* Notes.txt */; };
+		5AEA63FB1D44BFAF00421D89 /* defaultPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AEA63F91D44BFAF00421D89 /* defaultPhoto.png */; };
+		5AEA63FC1D44BFAF00421D89 /* meal1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AEA63FA1D44BFAF00421D89 /* meal1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		5A8638381D43ACDB00CED79F /* QuickStartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickStartUITests.swift; sourceTree = "<group>"; };
 		5A86383A1D43ACDB00CED79F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AEA63F51D44A5E000421D89 /* Notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
+		5AEA63F91D44BFAF00421D89 /* defaultPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultPhoto.png; sourceTree = "<group>"; };
+		5AEA63FA1D44BFAF00421D89 /* meal1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meal1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		5A8638091D43ACDB00CED79F = {
 			isa = PBXGroup;
 			children = (
+				5AEA63F81D44BFAF00421D89 /* Images */,
 				5AEA63F51D44A5E000421D89 /* Notes.txt */,
 				5A8638141D43ACDB00CED79F /* QuickStart */,
 				5A86382C1D43ACDB00CED79F /* QuickStartTests */,
@@ -129,6 +134,15 @@
 				5A86383A1D43ACDB00CED79F /* Info.plist */,
 			);
 			path = QuickStartUITests;
+			sourceTree = "<group>";
+		};
+		5AEA63F81D44BFAF00421D89 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5AEA63F91D44BFAF00421D89 /* defaultPhoto.png */,
+				5AEA63FA1D44BFAF00421D89 /* meal1.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +250,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AEA63FC1D44BFAF00421D89 /* meal1.png in Resources */,
+				5AEA63FB1D44BFAF00421D89 /* defaultPhoto.png in Resources */,
 				5AEA63F61D44A5E000421D89 /* Notes.txt in Resources */,
 				5A8638231D43ACDB00CED79F /* LaunchScreen.storyboard in Resources */,
 				5A8638201D43ACDB00CED79F /* Assets.xcassets in Resources */,

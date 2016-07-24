@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -45,22 +46,51 @@
                                     <constraint firstAttribute="trailing" secondItem="NcH-15-2Hp" secondAttribute="trailing" id="zJi-Af-JnL"/>
                                 </constraints>
                             </stackView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defalutPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="QLl-bj-fi8">
+                                <rect key="frame" x="30" y="195" width="540" height="540"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QLl-bj-fi8" secondAttribute="height" multiplier="1:1" id="TCW-qH-CZ0"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="aQX-LX-vEy" appends="YES" id="6mh-Mj-uCA"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="QLl-bj-fi8" firstAttribute="top" secondItem="uAA-f1-aiC" secondAttribute="bottom" constant="10" id="0AA-eO-jdT"/>
+                            <constraint firstItem="QLl-bj-fi8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="5xo-MM-672"/>
                             <constraint firstItem="uAA-f1-aiC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="DvF-su-b5t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QLl-bj-fi8" secondAttribute="trailing" constant="10" id="EGQ-cb-LSO"/>
                             <constraint firstItem="uAA-f1-aiC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="PkJ-DU-XFW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uAA-f1-aiC" secondAttribute="trailing" id="YkN-OL-VgO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QLl-bj-fi8" secondAttribute="bottom" constant="44" id="kmZ-FR-pjD"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="kmZ-FR-pjD"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="mealNameLabel" destination="46Q-uH-eu4" id="Qoz-Hd-N6p"/>
                         <outlet property="nameTextField" destination="NcH-15-2Hp" id="Exi-HQ-m3t"/>
+                        <outlet property="photoImageView" destination="QLl-bj-fi8" id="JJP-wZ-vtb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="aQX-LX-vEy">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="NZb-2b-wIt"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="240" y="372"/>
+            <point key="canvasLocation" x="92" y="332"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="defalutPhoto" width="540" height="540"/>
+    </resources>
 </document>

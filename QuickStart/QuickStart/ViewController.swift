@@ -8,15 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate{
+class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
     // MARK: Properties
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var mealNameLabel: UILabel!
+    @IBOutlet weak var photoImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        nameTextField.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,11 +38,31 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     // MARK: Actions
     
+    @IBAction func selectImageFromPhotoLibrary(sender: UITapGestureRecognizer) {
+        nameTextField.resignFirstResponder()
+        
+        let imagePicker = UIImagePickerController()
+        imagePicker.sourceType = .PhotoLibrary
+        imagePicker.delegate = self
+        
+        presentViewController(imagePicker, animated: true, completion: nil)
+    }
+    
     @IBAction func setDefaultLabelText(sender: UIButton) {
         mealNameLabel.text = "Default Text"
     }
     
+    // MARK: UIImagePickerControllerDelegate
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        
+        let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        photoImageView.image = selectedImage
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     
 }
 
