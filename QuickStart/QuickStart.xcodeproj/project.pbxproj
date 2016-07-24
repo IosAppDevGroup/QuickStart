@@ -18,6 +18,7 @@
 		5AEA63F61D44A5E000421D89 /* Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5AEA63F51D44A5E000421D89 /* Notes.txt */; };
 		5AEA63FB1D44BFAF00421D89 /* defaultPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AEA63F91D44BFAF00421D89 /* defaultPhoto.png */; };
 		5AEA63FC1D44BFAF00421D89 /* meal1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AEA63FA1D44BFAF00421D89 /* meal1.png */; };
+		5AEA63FE1D44CBB500421D89 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA63FD1D44CBB500421D89 /* RatingControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		5AEA63F51D44A5E000421D89 /* Notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
 		5AEA63F91D44BFAF00421D89 /* defaultPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultPhoto.png; sourceTree = "<group>"; };
 		5AEA63FA1D44BFAF00421D89 /* meal1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meal1.png; sourceTree = "<group>"; };
+		5AEA63FD1D44CBB500421D89 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				5A8638211D43ACDB00CED79F /* LaunchScreen.storyboard */,
 				5A8638241D43ACDB00CED79F /* Info.plist */,
 				5A86381C1D43ACDB00CED79F /* QuickStart.xcdatamodeld */,
+				5AEA63FD1D44CBB500421D89 /* RatingControl.swift */,
 			);
 			path = QuickStart;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AEA63FE1D44CBB500421D89 /* RatingControl.swift in Sources */,
 				5A86381E1D43ACDB00CED79F /* QuickStart.xcdatamodeld in Sources */,
 				5A8638181D43ACDB00CED79F /* ViewController.swift in Sources */,
 				5A8638161D43ACDB00CED79F /* AppDelegate.swift in Sources */,
