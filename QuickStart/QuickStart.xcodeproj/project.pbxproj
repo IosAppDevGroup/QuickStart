@@ -15,6 +15,7 @@
 		5A8638231D43ACDB00CED79F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A8638211D43ACDB00CED79F /* LaunchScreen.storyboard */; };
 		5A86382E1D43ACDB00CED79F /* QuickStartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86382D1D43ACDB00CED79F /* QuickStartTests.swift */; };
 		5A8638391D43ACDB00CED79F /* QuickStartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8638381D43ACDB00CED79F /* QuickStartUITests.swift */; };
+		5AEA63F61D44A5E000421D89 /* Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5AEA63F51D44A5E000421D89 /* Notes.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5A8638341D43ACDB00CED79F /* QuickStartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickStartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A8638381D43ACDB00CED79F /* QuickStartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickStartUITests.swift; sourceTree = "<group>"; };
 		5A86383A1D43ACDB00CED79F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AEA63F51D44A5E000421D89 /* Notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		5A8638091D43ACDB00CED79F = {
 			isa = PBXGroup;
 			children = (
+				5AEA63F51D44A5E000421D89 /* Notes.txt */,
 				5A8638141D43ACDB00CED79F /* QuickStart */,
 				5A86382C1D43ACDB00CED79F /* QuickStartTests */,
 				5A8638371D43ACDB00CED79F /* QuickStartUITests */,
@@ -233,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AEA63F61D44A5E000421D89 /* Notes.txt in Resources */,
 				5A8638231D43ACDB00CED79F /* LaunchScreen.storyboard in Resources */,
 				5A8638201D43ACDB00CED79F /* Assets.xcassets in Resources */,
 				5A86381B1D43ACDB00CED79F /* Main.storyboard in Resources */,
@@ -493,6 +497,7 @@
 				5A86383F1D43ACDB00CED79F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A8638401D43ACDB00CED79F /* Build configuration list for PBXNativeTarget "QuickStartTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +506,7 @@
 				5A8638421D43ACDB00CED79F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A8638431D43ACDB00CED79F /* Build configuration list for PBXNativeTarget "QuickStartUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +515,7 @@
 				5A8638451D43ACDB00CED79F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
