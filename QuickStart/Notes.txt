@@ -4,4 +4,12 @@
 
 Implement a Custom Control
 Create a Custom View
+Display the Custom View
+Add Buttons to the View
+Add Star Images to the Buttons
+Connect the Rating Control to the View Controller
+Clean Up the Project
+================================================
+
+
 
