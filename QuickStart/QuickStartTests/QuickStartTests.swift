@@ -33,4 +33,15 @@ class QuickStartTests: XCTestCase {
         }
     }
     
+    func testMealInit(){
+        let noPhoto = Meal(name: "xxx", photo: nil, rating: 0)
+        XCTAssertNotNil(noPhoto)
+        
+        let emptyName = Meal(name: "", photo: nil, rating: 0)
+        XCTAssertNil(emptyName)
+        
+        let badRating = Meal(name: "ok", photo: nil, rating: -1)
+        XCTAssertNil(badRating)
+    }
+    
 }

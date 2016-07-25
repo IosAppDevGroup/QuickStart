@@ -9,7 +9,10 @@ Add Buttons to the View
 Add Star Images to the Buttons
 Connect the Rating Control to the View Controller
 Clean Up the Project
-================================================
+================================================ commit
+
+Define Your Data Model
+Test Your Data
 
 
 
