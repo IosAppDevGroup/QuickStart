@@ -16,4 +16,14 @@ Test Your Data
 
 ================================================ commit
 
+Design Custom Table Cells
+Add Images to Your Project
+Connect the Table Cell UI to Code
+Load Initial Data
+Display the Data
+================================================ commit
+
+
+
+
 
