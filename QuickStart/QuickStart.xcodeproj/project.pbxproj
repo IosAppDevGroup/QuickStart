@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5A8638161D43ACDB00CED79F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8638151D43ACDB00CED79F /* AppDelegate.swift */; };
-		5A8638181D43ACDB00CED79F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8638171D43ACDB00CED79F /* ViewController.swift */; };
+		5A8638181D43ACDB00CED79F /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8638171D43ACDB00CED79F /* MealViewController.swift */; };
 		5A86381B1D43ACDB00CED79F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A8638191D43ACDB00CED79F /* Main.storyboard */; };
 		5A86381E1D43ACDB00CED79F /* QuickStart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A86381C1D43ACDB00CED79F /* QuickStart.xcdatamodeld */; };
 		5A8638231D43ACDB00CED79F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A8638211D43ACDB00CED79F /* LaunchScreen.storyboard */; };
@@ -47,7 +47,7 @@
 /* Begin PBXFileReference section */
 		5A8638121D43ACDB00CED79F /* QuickStart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickStart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A8638151D43ACDB00CED79F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5A8638171D43ACDB00CED79F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5A8638171D43ACDB00CED79F /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 		5A86381A1D43ACDB00CED79F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A86381D1D43ACDB00CED79F /* QuickStart.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuickStart.xcdatamodel; sourceTree = "<group>"; };
 		5A8638221D43ACDB00CED79F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 			children = (
 				5AF9448D1D5592F2006088DD /* Assets.xcassets */,
 				5A8638151D43ACDB00CED79F /* AppDelegate.swift */,
-				5A8638171D43ACDB00CED79F /* ViewController.swift */,
+				5A8638171D43ACDB00CED79F /* MealViewController.swift */,
 				5A8638191D43ACDB00CED79F /* Main.storyboard */,
 				5A8638211D43ACDB00CED79F /* LaunchScreen.storyboard */,
 				5A8638241D43ACDB00CED79F /* Info.plist */,
@@ -306,7 +306,7 @@
 				5AF944921D559785006088DD /* MealTableViewController.swift in Sources */,
 				5AF9448C1D558DCF006088DD /* MealTableViewCell.swift in Sources */,
 				5A86381E1D43ACDB00CED79F /* QuickStart.xcdatamodeld in Sources */,
-				5A8638181D43ACDB00CED79F /* ViewController.swift in Sources */,
+				5A8638181D43ACDB00CED79F /* MealViewController.swift in Sources */,
 				5A8638161D43ACDB00CED79F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

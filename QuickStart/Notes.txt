@@ -23,6 +23,17 @@ Load Initial Data
 Display the Data
 ================================================ commit
 
+Prepare the Meal Scene for Navigation
+
+Add a Segue to Navigate Forward
+Configure the Navigation Bar for the Scenes
+Store New Meals in the Meal List
+Disable Saving When the User Doesn't Enter an Item Name
+Cancel a New Meal Addition
+================================================ commit
+
+
+
 
 
 

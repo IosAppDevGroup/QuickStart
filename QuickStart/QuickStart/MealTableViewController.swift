@@ -36,6 +36,7 @@ class MealTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(" get meal count = \(meals.count)\n")
         return meals.count
     }
 
@@ -48,9 +49,25 @@ class MealTableViewController: UITableViewController {
         cell.nameLabel.text = meal.name
         cell.photoImageView.image = meal.photo
         cell.ratingControl.rating = meal.rating
-
+        print(" new cell = \(cell), cell.nameLabel.text = \(cell.nameLabel.text)\n")
         return cell
     }
+    
+   
+    @IBAction func unwindToMealList(sender: UIStoryboardSegue){
+        if let sourceViewController = sender.sourceViewController as? MealViewController, meal = sourceViewController.meal {
+            let newIndexPath = NSIndexPath(forRow: meals.count, inSection: 0)
+            meals.append(meal)
+            tableView.beginUpdates()
+//            tableView.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .Bottom)
+            tableView.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: UITableViewRowAnimation.Bottom)
+            tableView.endUpdates()
+            // tableView.reloadData()
+            print("new meal:\(meal) meal list is \(meals)\n");
+        }
+    }
+    
+    
 
     /*
      // Override to support conditional editing of the table view.
@@ -106,7 +123,9 @@ class MealTableViewController: UITableViewController {
 
         let photo3 = UIImage(named: "meal3");
         let meal3 = Meal(name: "meal3", photo: photo3, rating: 5)!
+        
+        let meal4 = Meal(name: "meal4", photo: photo3, rating: 5)!
 
-        meals += [meal1, meal2, meal3]
+        meals += [meal1, meal2, meal3, meal4]
     }
 }
