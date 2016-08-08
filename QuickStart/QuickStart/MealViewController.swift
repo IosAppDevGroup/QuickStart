@@ -22,6 +22,15 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         nameTextField.delegate = self
+        
+        if let meal = meal {
+            navigationItem.title = meal.name
+            nameTextField.text = meal.name
+            photoImageView.image = meal.photo
+            ratingControl.rating = meal.rating
+        }
+        
+        checkValidMealName()
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,7 +60,14 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     // MARK: Actions
     
     @IBAction func cancel(sender: UIBarButtonItem) {
-        dismissViewControllerAnimated(true, completion: nil)
+        //let is presentInAddMealMode =
+        let isPresentInAddMealMode = presentingViewController is UINavigationController
+        if isPresentInAddMealMode {
+            dismissViewControllerAnimated(true, completion: nil)
+        }
+        else{
+            navigationController!.popViewControllerAnimated(true)
+        }
     }
     
     @IBAction func selectImageFromPhotoLibrary(sender: UITapGestureRecognizer) {

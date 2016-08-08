@@ -31,6 +31,16 @@ Store New Meals in the Meal List
 Disable Saving When the User Doesn't Enter an Item Name
 Cancel a New Meal Addition
 ================================================ commit
+Implement Edit and Delete Behavior
+Allow Editing of Existing Meals
+Cancel an Edit to an Existing Meal
+Support Deleting Meals
+
+Persist Data
+Save and Load the Meal
+================================================ commit
+
+
 
 
 
